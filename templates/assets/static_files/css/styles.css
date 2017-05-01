@@ -1,0 +1,966 @@
+@font-face {
+    font-family: "BebasBook";
+    src: url("../fonts/BebasBook/BebasBook.eot");
+    src: url("../fonts/BebasBook/BebasBook.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/BebasBook/BebasBook.woff") format("woff"),
+    url("../fonts/BebasBook/BebasBook.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GothamProMedium";
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+    url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0 0 200px 0;
+    font-size: 0;
+}
+
+.grid {
+    max-width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.group::before,
+.group::after {
+    content: "";
+    display: table;
+}
+
+.group::after {
+    clear: both;
+}
+
+.group {
+    clear: both;
+    *zoom: 1;
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+----------------------------------------------------MAIN-PAGE----------------------------------------------------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*------------------HEADER------------------*/
+
+header {
+    background-color: rgba(19, 151, 149, 0.83);
+    height: 75px;
+    padding-top: 10px;
+}
+
+.logo {
+    float: left;
+    display: inline-block;
+}
+
+.menu,
+.language,
+.extra_menu {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: "GothamProBold", sans-serif;
+    font-size: 12px;
+    list-style: none;
+    /*border: 1px solid red;*/
+}
+
+.menu {
+    margin-top: 12px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 19px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.language {
+    color: #fff;
+    height: 28px;
+    margin-top: 14px;
+    padding: 7px 35px 0 20px;
+    border-right: 1px solid #fff;
+}
+
+.language li {
+    display: inline-block;
+    /*padding: 10px 5px 0 5px;*/
+}
+
+.language li span {
+    padding: 0 3px 0 5px;
+}
+
+.language a {
+    display: inline-block;
+    padding-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid #fff;
+}
+
+
+
+.extra_menu {
+    /*width: 200px;*/
+    /*border: 1px solid red;*/
+    padding: 10px 0 0 40px;
+}
+
+.extra_menu li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.extra_menu li:nth-child(2) {
+    padding: 0 20px 0 30px;
+}
+
+.extra_menu li:last-child span,
+.extra_menu li:last-child img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.extra_menu li:last-child span {
+    width: 16px;
+    text-align: right;
+}
+
+.extra_menu a {
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+.m_group {
+    float: right;
+    /*border: 1px solid green;*/
+}
+
+nav,
+.language,
+.extra_menu {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+
+/*------------------BG1------------------*/
+
+.bg1 {
+    background: url("../images/bg1.jpg") center 0 no-repeat;
+    height: 618px;
+}
+
+.content1 {
+    padding-top: 160px;
+}
+
+h1 {
+    font-family: "BebasBook", sans-serif;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 80px;
+}
+
+.link_button {
+    font-family: "GothamProRegular", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    width: 220px;
+    height: 45px;
+    margin: 0 auto;
+    border: 3px solid #fff;
+    border-radius: 25px;
+}
+
+
+/*------------------BG2------------------*/
+
+.bg2 {
+    background-color: #f6f6f6;
+}
+
+.content2 {
+    padding: 60px 0;
+}
+
+h2 {
+    font-family: "BebasBook", sans-serif;
+    font-size: 48px;
+    font-weight: normal;
+    color: #282828;
+    text-align: center;
+}
+
+.content2 > div:last-child h2 {
+    padding-top: 50px;
+}
+
+.places {
+    padding: 50px 40px;
+}
+
+.place {
+    display: inline-block;
+    vertical-align: top;
+    height: 395px;
+    margin-right: 1.25%;
+    overflow: hidden;
+}
+
+.places > div:last-child {
+    margin-right: 0;
+}
+
+.place > a {
+    position: relative;
+    display: block;
+}
+
+.n_place {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-color: #22bebb;
+    font-family: "GothamProMedium", sans-serif;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.place img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.min_place {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+}
+
+.column3 > a:first-child {
+    margin-bottom: 15px;
+}
+
+.column1 {
+    width: 49.16666666666667%;
+}
+
+.column2,
+.column3 {
+    width: 24.16666666666667%;
+}
+
+.column1 > a,
+.column2 > a {
+    width: 100%;
+    height: 100%;
+}
+
+.tours .link_button {
+    background-color: #139795;
+    border: 0;
+}
+
+.p_hover {
+    background: rgba(19, 151, 149, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+
+.h_content {
+    position: absolute;
+    top: 50%;
+    /*left: 50%;*/
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.h_content span {
+    display: block;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.h_content > span:first-child {
+    font-family: "GothamProMedium", sans-serif;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.b_block:hover .p_hover {
+    opacity: 1;
+}
+
+.min_place:hover .p_hover {
+    opacity: 1;
+}
+
+.b_block:hover .n_place {
+    opacity: 0;
+}
+
+.min_place:hover .n_place {
+    opacity: 0;
+}
+
+
+/*------------------BG2------------------*/
+
+.bg3 {
+    background-color: #fff;
+}
+
+.content3 {
+    padding: 45px 0 75px 0;
+}
+
+h3 {
+    font-family: "BebasBook", sans-serif;
+    font-size: 36px;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+p {
+    font-family: "GothamProRegular", sans-serif;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+.content3 p {
+    padding: 5px 0 35px 0;
+}
+
+.line {
+    width: 60px;
+    height: 3px;
+    background-color: #17bbb8;
+    margin: 0 auto;
+}
+
+.iframe {
+    width: 100%;
+    height: 675px;
+    margin-top: 40px;
+    border: 1px solid green;
+}
+
+
+
+/*------------------BG2------------------*/
+
+.bg4 {
+    background-color: #f6f6f6;
+}
+
+.content4 {
+    padding: 60px 0 70px 0;
+}
+
+.images {
+    padding: 40px 0 40px 0;
+}
+
+.image {
+    display: inline-block;
+    vertical-align: top;
+    width: 49.33333333333333%;
+    height: 595px;
+    margin-right: 1.25%;
+    /*border: 1px solid red;*/
+}
+
+.images > div:first-child {
+    width: 49.41666666666667%;
+}
+
+.images > div:last-child {
+    margin-right: 0;
+}
+
+.min_img {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 48.73524451939292%;
+    height: 290px;
+    margin-right: 2.529510961214165%;
+    /*border: 1px solid green;*/
+    overflow: hidden;
+}
+
+.images > div:first-child > div:nth-child(2n) {
+    margin-right: 0;
+}
+
+.images > div:first-child > div:first-child,
+.images > div:first-child > div:nth-child(2) {
+    margin-bottom: 15px;
+}
+
+.b_img {
+    position: relative;
+}
+
+.b_img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.min_img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.b_img span,
+.min_img span {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.gallery .link_button {
+    background-color: #139795;
+    border: 0;
+}
+
+.comments_block {
+    padding-top: 60px;
+}
+
+.comments {
+    text-align: center;
+    padding: 40px 0 50px 0;
+}
+
+.comment {
+    display: inline-block;
+    vertical-align: top;
+    width: 25.41666666666667%;
+    margin: 0 4.083333333333333%;
+    text-decoration: none;
+}
+
+.comments > a:first-child {
+    margin-left: 0;
+}
+
+.comments > a:last-child {
+    margin-right: 0;
+}
+
+.com_img {
+    width: 100%;
+    height: 305px;
+}
+
+.com_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.comment h3 {
+    color: #139795;
+    text-align: left;
+    padding: 25px 0 10px 0;
+}
+
+.comment > p {
+    height: 155px;
+    color: #282828;
+    text-align: left;
+    line-height: 22px;
+    overflow: hidden;
+}
+
+.author {
+    padding-top: 20px;
+}
+
+.author p {
+    color: #686868;
+    text-align: left;
+}
+
+.author > p:last-child {
+    padding-top: 6px;
+}
+
+
+.comments_block .link_button {
+    background-color: #139795;
+    border: 0;
+}
+
+
+/*------------------FOOTER------------------*/
+
+footer {
+    background-color: #1d2121;
+}
+
+.content5 {
+    padding: 55px 0 30px;
+}
+
+.f_logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 25.41666666666667%;
+    height: auto;
+}
+
+.links,
+.contacts {
+    width: 25.41666666666667%;
+}
+
+.share {
+    width: 23.7%;
+}
+
+.links,
+.contacts,
+.share {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    font-family: "GothamProRegular", sans-serif;
+    font-size: 12px;
+}
+
+.links li,
+.contacts li {
+    padding-bottom: 20px;
+}
+
+.contacts li {
+    display: block;
+    color: #c1c2c2;
+    padding-left: 20px;
+}
+
+.links a {
+    display: inline-block;
+    color: #c1c2c2;
+    text-decoration: none;
+}
+
+.contacts li:first-child {
+    padding-left: 0;
+}
+
+.contacts li:nth-child(2) {
+    background: url("../images/phone.png") 0 top no-repeat;
+}
+
+.contacts li:nth-child(3) {
+    background: url("../images/email.png") 0 top no-repeat;
+}
+
+.contacts li:nth-child(4) {
+    background: url("../images/location.png") 0 top no-repeat;
+}
+
+.links li:first-child,
+.contacts li:first-child,
+.share li:first-child {
+    font-family: "GothamProBold", sans-serif;
+    font-size: 16px;
+    color: #d1d4d4;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
+
+.share{
+    font-size: 0;
+}
+
+.share li:not(.exeption) {
+    background: url("../images/social.png") no-repeat 0 0;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.share li:first-child {
+    display: block;
+}
+
+.social {
+    display: block;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+}
+
+.share li.instagram {
+    background-position: -49px 0;
+}
+
+.share li.twitter {
+    background-position: -97px 0;
+}
+
+.share li.youtube {
+    background-position: -145px 0;
+}
+
+.share li.google {
+    background-position: -193px 0;
+}
+
+.footer {
+    background-color: #131616;
+}
+
+.f_content {
+    padding: 15px 0;
+}
+
+.f_content span {
+    font-family: "GothamProMedium", sans-serif;
+    font-size: 11px;
+    color: #373737;
+}
+
+.copyright {
+    float: left;
+    padding-top: 7px;
+}
+
+.sunrise {
+    float: right;
+}
+
+.sunrise span,
+.sunrise a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sunrise a {
+    padding-left: 15px;
+}
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+----------------------------------------------------ABOUT-US----------------------------------------------------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*------------------A-BG1------------------*/
+
+.a_bg1 {
+    background-color: #f6f6f6;
+}
+
+.a_content1 {
+    padding: 60px 0;
+}
+
+.about_img,
+.about_desc {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about_img {
+    width: 42.16666666666667%;
+    height: 570px;
+}
+
+.about_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_desc {
+    width: 57.83333333333333%;
+    padding: 0 50px;
+    height: auto;
+}
+
+.about_desc h3,
+.about_desc p {
+    text-align: left;
+}
+
+.about_desc h3 {
+    color: #139795;
+    padding-bottom: 25px;
+}
+
+.about_desc p {
+    color: #282828;
+    line-height: 23px;
+}
+
+/*------------------A-BG2------------------*/
+
+.a_bg2 {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 14px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 14px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 0 14px 4px rgba(0,0,0,0.1);
+}
+
+.a_content2 {
+    padding: 45px 0 60px 0;
+}
+
+.a_content2 h3 {
+    color: #139795;
+}
+
+.team {
+    text-align: center;
+    padding: 45px 0 50px 0;
+}
+
+.member {
+    display: inline-block;
+    vertical-align: top;
+    width: 15.66666666666667%;
+    height: auto;
+    margin: 0 3.333333333333333%;
+}
+
+.team > div:nth-child(5),
+.team > div:nth-child(6),
+.team > div:nth-child(7),
+.team > div:nth-child(8) {
+    margin-top: 45px;
+}
+
+.member_img {
+    position: relative;
+    width: 100%;
+    height: 188px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.member_img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*width: 100%;*/
+    /*height: 100%;*/
+}
+
+.member p:first-of-type {
+    font-family: "GothamProMedium", sans-serif;
+    font-size: 17px;
+    color: #282828;
+    padding: 20px 0 10px 0;
+}
+
+.s_line {
+    background-color: #282828;
+    display: block;
+    width: 24px;
+    height: 1px;
+    margin: 0 auto;
+}
+
+.member p:last-of-type {
+    font-size: 14px;
+    color: #282828;
+    padding: 10px 0;
+}
+
+.pagination {
+    text-align: center;
+}
+
+.pagination a {
+    font-family: "GothamProRegular", sans-serif;
+    font-size: 14px;
+    color: #17bbb8;
+    line-height: 28px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 40px;
+    height: 30px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #c1c2c2;
+    border-radius: 4px;
+    margin: 0 2px;
+}
+
+.pagination a:first-child {
+    background: url("../images/p_prev.png") center no-repeat;
+}
+
+.pagination a:last-child {
+    background: url("../images/p_next.png") center no-repeat;
+}
+
+.pagination a.active {
+    color: #282828;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+
+/*------------------A-BG3------------------*/
+
+.a_bg3 {
+    background-color: #f6f6f6;
+}
+
+.a_content3 h3 {
+    color: #139795;
+}
+
+.vacancy {
+    background-color: #fff;
+    display: inline-block;
+    vertical-align: top;
+    width: 24.04166666666667%;
+    height: auto;
+    margin-right: 1.25%;
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.1);
+}
+
+.vacancies > div:last-child {
+    margin-right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+----------------------------------------------------MAIN-PAGE----------------------------------------------------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/

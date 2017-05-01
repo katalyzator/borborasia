@@ -21,6 +21,7 @@ from borborasia import settings
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'$', 'main.views.index_view', name='index')
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

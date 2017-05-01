@@ -6,3 +6,10 @@ def index_view(request):
     template = 'main/index.html'
 
     return render(request, template, context)
+
+
+def about_view(request):
+    context = {}
+    template = 'about.html'
+
+    return render(request, template, context)

@@ -1,5 +1,7 @@
 from django.shortcuts import render
 
+from main.models import Personal
+
 
 def index_view(request):
     context = {}
@@ -9,7 +11,8 @@ def index_view(request):
 
 
 def about_view(request):
-    context = {}
+    personal = Personal.objects.all()
+    context = {"personal": personal}
     template = 'about.html'
 
     return render(request, template, context)

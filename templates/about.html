@@ -47,85 +47,18 @@
             <h3>Наша команда</h3>
 
             <div class="team">
-                <div class="member">
-                    <div class="member_img">
-                        <img src="{% static 'images/member1.jpg' %}" alt="image">
+                {% for item in personal %}
+                    <div class="member">
+                        <div class="member_img">
+                            <img src="{{ item.image.url }}" alt="image">
+                        </div>
+                        <p>{{ item.name }}</p>
+                        <span class="s_line"></span>
+
+                        <p>{{ item.position }}</p>
                     </div>
-                    <p>Макарова Ксения</p>
-                    <span class="s_line"></span>
 
-                    <p>менеджер</p>
-                </div>
-
-                <div class="member">
-                    <div class="member_img">
-                        <img src="assets/images/member2.jpg" alt="image">
-                    </div>
-                    <p>Калматова Айжана</p>
-                    <span class="s_line"></span>
-
-                    <p>менеджер</p>
-                </div>
-
-                <div class="member">
-                    <div class="member_img">
-                        <img src="assets/images/member3.jpg" alt="image">
-                    </div>
-                    <p>Эргешев Чубак</p>
-                    <span class="s_line"></span>
-
-                    <p>маркетолог</p>
-                </div>
-
-                <div class="member">
-                    <div class="member_img">
-                        <img src="assets/images/member4.jpg" alt="image">
-                    </div>
-                    <p>Мережко Анна</p>
-                    <span class="s_line"></span>
-
-                    <p>маркетолог</p>
-                </div>
-
-                <div class="member">
-                    <div class="member_img">
-                        <img src="assets/images/member5.jpg" alt="image">
-                    </div>
-                    <p>Давыдова Карина</p>
-                    <span class="s_line"></span>
-
-                    <p>менеджер</p>
-                </div>
-
-                <div class="member">
-                    <div class="member_img">
-                        <img src="assets/images/member6.jpg" alt="image">
-                    </div>
-                    <p>Кайдылдаев Данияр</p>
-                    <span class="s_line"></span>
-
-                    <p>менеджер</p>
-                </div>
-
-                <div class="member">
-                    <div class="member_img">
-                        <img src="assets/images/member7.jpg" alt="image">
-                    </div>
-                    <p>Тугушева Малика</p>
-                    <span class="s_line"></span>
-
-                    <p>маркетолог</p>
-                </div>
-
-                <div class="member">
-                    <div class="member_img">
-                        <img src="assets/images/member8.jpg" alt="image">
-                    </div>
-                    <p>Мадалиева Айым</p>
-                    <span class="s_line"></span>
-
-                    <p>маркетолог</p>
-                </div>
+                {% endfor %}
             </div>
 
             <div class="pagination">

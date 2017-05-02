@@ -4,8 +4,7 @@ from .models import *
 
 
 class PersonalAdmin(admin.ModelAdmin):
-    class Meta:
-        model = Personal
+    list_display = ['name', 'position']
 
 
 admin.site.register(Personal, PersonalAdmin)

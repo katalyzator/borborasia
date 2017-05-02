@@ -890,8 +890,16 @@ footer {
     background-color: #f6f6f6;
 }
 
+.a_content3 {
+    padding: 55px 0 60px 0;
+}
+
 .a_content3 h3 {
     color: #139795;
+}
+
+.vacancies {
+    padding-top: 45px;
 }
 
 .vacancy {
@@ -901,6 +909,7 @@ footer {
     width: 24.04166666666667%;
     height: auto;
     margin-right: 1.25%;
+    padding: 20px;
     border-radius: 25px;
     -webkit-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.1);
     -moz-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.1);
@@ -911,11 +920,258 @@ footer {
     margin-right: 0;
 }
 
+.v_title {
+    font-family: "GothamProMedium", sans-serif;
+    font-size: 18px;
+    color: #282828;
+    text-transform: uppercase;
+}
+
+.vacancy p:first-of-type {
+    font-size: 14px;
+    color: #282828;
+    text-align: left;
+    line-height: 22px;
+}
+
+.vacancy p:last-of-type {
+    font-size: 18px;
+    color: #17bbb8;
+    text-align: left;
+    padding-top: 30px;
+}
+
+.vacancy .s_line {
+    width: 44px;
+    margin: 12px 0 10px 0;
+}
 
 
+/*------------------A-BG4------------------*/
+
+.a_bg4 {
+    background-color: #f6f6f6;
+}
+
+.title_block {
+    height: 600px;
+    background: url("../images/about_bg.jpg") center 0 no-repeat;
+}
+
+.title_content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.title_content h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 0;
+}
+
+.a_content4 {
+    padding: 60px 0;
+}
+
+.social_pro {
+    width: 66.33333333333333%;
+    margin: 0 auto;
+}
+
+.social_pro p {
+    color: #282828;
+    text-align: left;
+    line-height: 24px;
+    padding-bottom: 30px;
+}
+
+.social_pro a {
+    font-family: "GothamProRegular", sans-serif;
+    font-size: 16px;
+    color: #17bbb8;
+    text-decoration: none;
+}
 
 
+/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+------------------------------------------------------TOURS------------------------------------------------------------
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
+
+/*------------------T-BG1------------------*/
+
+.t_bg1 {
+    background-color: #f6f6f6;
+}
+
+.t_content1 {
+    padding: 55px 0 30px 0;
+}
+
+.tours_block {
+    display: inline-block;
+    vertical-align: top;
+    width: 32.5%;
+    height: auto;
+    margin-right: 1.25%;
+}
+
+.tours_blocks > div:last-child {
+    margin-right: 0;
+}
+
+h4 {
+    font-family: "BebasBook", sans-serif;
+    font-size: 30px;
+    color: #139795;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.img_block {
+    width: 100%;
+    height: 240px;
+    margin: 35px 0 40px 0;
+}
+
+.img_block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.todo_list {
+    font-family: "GothamProRegular", sans-serif;
+    font-size: 16px;
+    list-style: none;
+}
+
+.todo_list li {
+    margin-bottom: 20px;
+}
+
+.todo_list a {
+    color: #282828;
+    text-decoration: none;
+}
+
+
+/*------------------T-BG2------------------*/
+
+.t_bg2 {
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 14px 4px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 0 14px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 0 14px 4px rgba(0,0,0,0.1);
+}
+
+.t_content2 {
+    padding: 45px 0 60px 0;
+}
+
+.tours {
+    padding: 45px 0 40px 0;
+}
+
+.tours .place {
+    position: relative;
+    width: 24.08333333333333%;
+    height: 415px;
+    margin-bottom: 15px;
+}
+
+.tours > a:nth-child(3n) {
+    margin-right: 1.166666666666667%;
+}
+
+.tours > a:nth-child(4n) {
+    margin-right: 0;
+}
+
+.tours .n_place {
+    z-index: 101;
+}
+
+.shadow {
+    /*background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.4) 150%);*/
+    /*background: rgba(0, 0, 0, 0.3);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*-webkit-box-shadow: inset 0px -200px 300px -40px rgba(0,0,0,0.5);*/
+    /*-moz-box-shadow: inset 0px -200px 300px -40px rgba(0,0,0,0.5);*/
+    box-shadow: inset 0px -200px 300px -40px rgba(0,0,0,0.5);
+}
+
+.tour_desc {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    z-index: 101;
+}
+
+.tour_title {
+    font-family: "GothamProMedium", sans-serif;
+    font-size: 16px;
+    color: #fff;
+}
+
+.tour_desc p {
+    font-size: 12px;
+    color: #eaeaea;
+    text-align: left;
+    line-height: 18px;
+    padding: 10px 0 15px 0;
+}
+
+.season {
+    font-family: "GothamProRegular", sans-serif;
+    font-size: 0;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 28px;
+    list-style: none;
+}
+
+.season li {
+    font-size: 12px;
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.season li:first-child {
+    background-color: #eb1d25;
+    margin-right: 15px;
+}
+
+.season li:last-child {
+    background-color: #139d9d;
+}
+
+.tours .place:hover .p_hover {
+    opacity: 1;
+    z-index: 102;
+}
+
+.tours .place:hover .n_place,
+.tours .place:hover .tour_desc {
+    opacity: 0;
+}
+
+.tour_desc .hidden {
+    display: none;
+}
 
 
 

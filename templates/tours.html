@@ -1,0 +1,244 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+
+{% block content %}
+
+    <div class="t_bg1">
+        {% include 'header.html' %}
+        <div class="t_content1 grid">
+            <div class="tours_blocks">
+                <div class="tours_block">
+                    <h4>О Кыргызстане</h4>
+
+                    <div class="img_block">
+                        <img src="{% static 'images/ala_archa.jpg' %}" alt="image">
+                    </div>
+
+                    <ul class="todo_list">
+                        <li><a href="#">Любимые места туристов</a></li>
+                        <li><a href="#">Интересные факты</a></li>
+                        <li><a href="#">Столица</a></li>
+                    </ul>
+                </div>
+
+                <div class="tours_block">
+                    <h4>Перед поездкой</h4>
+
+                    <div class="img_block">
+                        <img src="{% static 'images/trip_img.jpg' %}" alt="image">
+                    </div>
+
+                    <ul class="todo_list">
+                        <li><a href="#">Подготовка документов</a></li>
+                        <li><a href="#">Виды транспорта</a></li>
+                        <li><a href="#">Таможня</a></li>
+                    </ul>
+                </div>
+
+                <div class="tours_block">
+                    <h4>Запланируйте путешествие</h4>
+
+                    <div class="img_block">
+                        <img src="{% static 'images/adventure_img.jpg' %}" alt="image">
+                    </div>
+
+                    <ul class="todo_list">
+                        <li><a href="#">Найти жилье</a></li>
+                        <li><a href="#">Найти туры</a></li>
+                        <li><a href="#">Посмотреть Кыргызстан на карте</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="t_bg2">
+        <div class="t_content2 grid">
+            <h2>Туры</h2>
+
+            <div class="tours">
+                <a href="#" class="place">
+                    <span class="n_place">Нарын</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+                        <ul class="season">
+                            <li>лето</li>
+                            <li class="hidden">Зима</li>
+                        </ul>
+                    </div>
+                    <img src="{% static 'images/tour1.jpg' %}" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">Нарын</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+                        <ul class="season">
+                            <li>лето</li>
+                            <li class="hidden">Зима</li>
+                        </ul>
+                    </div>
+                    <img src="{% static 'images/tour1.jpg' %}" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">Нарын</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+                        <ul class="season">
+                            <li>лето</li>
+                            <li>Зима</li>
+                        </ul>
+                    </div>
+                    <img src="{% static 'images/tour1.jpg' %}" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">Нарын</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+                        <ul class="season">
+                            <li class="hidden">лето</li>
+                            <li>Зима</li>
+                        </ul>
+                    </div>
+                    <img src="{% static 'images/tour1.jpg' %}" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">Нарын</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+                        <ul class="season">
+                            <li>лето</li>
+                            <li class="hidden">Зима</li>
+                        </ul>
+                    </div>
+                    <img src="{% static 'images/tour1.jpg' %}" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">Нарын</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+                        <ul class="season">
+                            <li class="hidden">лето</li>
+                            <li>Зима</li>
+                        </ul>
+                    </div>
+                    <img src="{% static 'images/tour1.jpg' %}" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">Нарын</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+                        <ul class="season">
+                            <li>лето</li>
+                            <li>Зима</li>
+                        </ul>
+                    </div>
+                    <img src="{% static 'images/tour1.jpg' %}" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+                <a href="#" class="place">
+                    <span class="n_place">Нарын</span>
+
+                    <div class="p_hover">
+                        <div class="h_content">
+                            <span>Посмотреть</span>
+                        </div>
+                    </div>
+
+                    <div class="tour_desc">
+                        <div class="tour_title">Кан и Гут</div>
+                        <p>Озеро Чатыр-Куль расположено между хребтами Ат-Баши и Торугарт-Тоо на высоте 3530 м. </p>
+                        <ul class="season">
+                            <li class="hidden">лето</li>
+                            <li>Зима</li>
+                        </ul>
+                    </div>
+                    <img src="{% static 'images/tour1.jpg' %}" alt="image">
+                    <div class="shadow"></div>
+                </a>
+
+            </div>
+
+            <div class="pagination">
+                <a href="#"></a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">...</a>
+                <a href="#">12</a>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

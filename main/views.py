@@ -16,3 +16,10 @@ def about_view(request):
     template = 'about.html'
 
     return render(request, template, context)
+
+
+def tours_view(request):
+    context = {}
+    template = 'tours.html'
+
+    return render(request, template, context)

@@ -1,4 +1,3 @@
-
 (function () {
     $('.slider').slick({
         cssEase: 'ease-in',
@@ -9,7 +8,7 @@
     });
 
     // get the name of uploaded file
-    $('input[type="file"]').change(function(){
+    $('input[type="file"]').change(function () {
         var value = $("input[type='file']").val();
         $('.js-value').text(value);
     });

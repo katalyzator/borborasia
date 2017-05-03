@@ -30,3 +30,17 @@ def todo_view(request):
     template = 'todolist.html'
 
     return render(request, template, context)
+
+
+def review_view(request):
+    context = {}
+    template = 'review.html'
+
+    return render(request, template, context)
+
+
+def place_view(request):
+    context = {}
+    template = 'place.html'
+
+    return render(request, template, context)

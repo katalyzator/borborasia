@@ -30,3 +30,16 @@ class Personal(models.Model):
 
     def __unicode__(self):
         return smart_unicode(self.name)
+
+
+class Vacancy(models.Model):
+    class Meta:
+        verbose_name_plural = 'Вакансии'
+        verbose_name = 'Вакансия'
+
+    position = models.CharField(max_length=255, verbose_name='Позиция')
+    description = models.CharField(max_length=600, verbose_name='Описание')
+    calary = models.IntegerField(default=10000, verbose_name='Зарплата')
+
+    def __unicode__(self):
+        return smart_unicode(self.description)

@@ -23,3 +23,10 @@ def tours_view(request):
     template = 'tours.html'
 
     return render(request, template, context)
+
+
+def todo_view(request):
+    context = {}
+    template = 'todolist.html'
+
+    return render(request, template, context)

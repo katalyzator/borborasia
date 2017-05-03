@@ -1,139 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>BoborAsia</title>
-    <link rel="stylesheet" href="assets/css/normalize.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
+{% extends 'base.html' %}
 
-<div class="todo_bg">
-    <header>
-        <div class="header grid group">
-            <a href="#" class="logo"><img src="assets/images/logo.png" alt="logotype"></a>
+{% load staticfiles %}
 
+{% block content %}
 
-            <div class="m_group">
-                <nav>
-                    <ul class="menu">
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">КУДА ОТПРАВИТЬСЯ</a></li>
-                        <li><a href="#">чем заняться</a></li>
-                        <li><a href="#">планировщик туров</a></li>
+    <div class="todo_bg">
+        {% include 'header.html' %}
+        <div class="todo_content grid">
+            <div class="activities">
+                <div class="tours_block">
+                    <h4>Занятия</h4>
+
+                    <div class="img_block">
+                        <img src="{% static 'images/todo_img1.jpg' %}" alt="image">
+                    </div>
+                    <ul class="todo_list">
+                        <li><a href="#"> Озера и ущелья</a></li>
+                        <li><a href="#"> Национальные лакомства</a></li>
+                        <li><a href="#"> 10 вещей которые стоит попробовать</a></li>
+                        <li><a href="#"> Развлечения</a></li>
                     </ul>
-                </nav>
-
-                <ul class="language">
-                    <li><a href="#">ru</a><span>/</span></li>
-                    <li><a href="#">eng</a></li>
-                </ul>
-
-                <ul class="extra_menu">
-                    <li><a href="#"><img src="assets/images/search_icon.png" alt="search-icon"></a></li>
-                    <li><a href="#"><img src="assets/images/menu_map.png" alt="map"></a></li>
-                    <li>
-                        <a href="#">
-                            <img src="assets/images/favourite.png" alt="favourite">
-                            <span>12</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </header>
-    <div class="todo_content grid">
-        <div class="activities">
-            <div class="tours_block">
-                <h4>Занятия</h4>
-
-                <div class="img_block">
-                    <img src="assets/images/todo_img1.jpg" alt="image">
                 </div>
-                <ul class="todo_list">
-                    <li><a href="#">     Озера и ущелья</a></li>
-                    <li><a href="#">     Национальные лакомства</a></li>
-                    <li><a href="#">     10 вещей которые стоит попробовать</a></li>
-                    <li><a href="#">     Развлечения</a></li>
-                </ul>
-            </div>
 
-            <div class="tours_block">
-                <h4>Маршруты</h4>
+                <div class="tours_block">
+                    <h4>Маршруты</h4>
 
-                <div class="img_block">
-                    <img src="assets/images/todo_img2.jpg" alt="image">
+                    <div class="img_block">
+                        <img src="{% static 'images/todo_img2.jpg' %}" alt="image">
+                    </div>
+                    <ul class="todo_list">
+                        <li><a href="#"> Наиболее популярные маршруты</a></li>
+                        <li><a href="#"> Тур вокруг озера Иссык-Куль</a></li>
+                        <li><a href="#"> Идеи для трехнедельного путешествия</a></li>
+                        <li><a href="#"> Трехдневные маршруты</a></li>
+                    </ul>
                 </div>
-                <ul class="todo_list">
-                    <li><a href="#">     Наиболее популярные маршруты</a></li>
-                    <li><a href="#">     Тур вокруг озера Иссык-Куль</a></li>
-                    <li><a href="#">     Идеи для трехнедельного путешествия</a></li>
-                    <li><a href="#">     Трехдневные маршруты</a></li>
-                </ul>
-            </div>
 
-            <div class="tours_block">
-                <h4>Инфонмация</h4>
+                <div class="tours_block">
+                    <h4>Инфонмация</h4>
 
-                <div class="img_block">
-                    <img src="assets/images/information_img.jpg" alt="image">
+                    <div class="img_block">
+                        <img src="{% static 'images/information_img.jpg' %}" alt="image">
+                    </div>
+                    <ul class="todo_list">
+                        <li><a href="#"> Специальные предложения</a></li>
+                        <li><a href="#"> Посмотреть Кыргызстан на карте</a></li>
+                        <li><a href="#"> Узнать о предстоящих событиях</a></li>
+                        <li><a href="#"> Отзывы</a></li>
+                    </ul>
                 </div>
-                <ul class="todo_list">
-                    <li><a href="#">     Специальные предложения</a></li>
-                    <li><a href="#">     Посмотреть Кыргызстан на карте</a></li>
-                    <li><a href="#">     Узнать о предстоящих событиях</a></li>
-                    <li><a href="#">     Отзывы</a></li>
-                </ul>
             </div>
         </div>
     </div>
-</div>
 
 
-<footer>
-    <div class="grid content5">
-        <a href="#" class="f_logo"><img src="assets/images/footer_logo.png" alt="image"></a>
-
-        <ul class="links">
-            <li>BORBOR ASIA</li>
-            <li><a href="#">О нас</a></li>
-            <li><a href="#">Куда отправиться</a></li>
-            <li><a href="#">Чем заняться</a></li>
-            <li><a href="#">Планировщик туров</a></li>
-        </ul>
-
-        <ul class="contacts">
-            <li>Контакты</li>
-            <li>+996 550 055 577</li>
-            <li>info@borborasia.kg</li>
-            <li>Кыргызстан, Бишкек, <br> ул. Борбор</li>
-        </ul>
-
-        <ul class="share">
-            <li class="exeption">мы в соцсетях</li>
-            <li class="fb"><a class="social" href="#"></a></li>
-            <li class="instagram"><a class="social" href="#"></a></li>
-            <li class="twitter"><a class="social" href="#"></a></li>
-            <li class="youtube"><a class="social" href="#"></a></li>
-            <li class="google"><a class="social" href="#"></a></li>
-        </ul>
-    </div>
-
-    <div class="footer">
-        <div class="f_content grid group">
-            <span class="copyright">© 2017</span>
-
-            <div class="sunrise">
-                <span>Разработка проекта</span>
-                <a href="#"><img src="assets/images/sunrise_logo.png" alt="sunrise"></a>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<script src="assets/js/jquery-3.1.0.min.js"></script>
-<script src="assets/js/script.js"></script>
-</body>
-</html>
+{% endblock %}

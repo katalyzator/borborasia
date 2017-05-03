@@ -24,6 +24,7 @@ urlpatterns = [
     url(r'^$', 'main.views.index_view', name='index'),
     url(r'^about/', 'main.views.about_view', name='about'),
     url(r'^tours/', 'main.views.tours_view', name='tour'),
+    url(r'^todo/', 'main.views.todo_view', name='todo'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

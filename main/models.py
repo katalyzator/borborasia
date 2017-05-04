@@ -33,8 +33,8 @@ class Tour(models.Model):
 
 class TourImage(models.Model):
     class Meta:
-        verbose_name_plural = ''
-        verbose_name = ''
+        verbose_name_plural = 'Фотографии Туров'
+        verbose_name = 'Фотография Тура'
 
     tour = models.ForeignKey(Tour, verbose_name='Выберите тур')
     image = models.ImageField(upload_to='tours/images')

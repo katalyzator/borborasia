@@ -41,8 +41,10 @@ def review_view(request):
     return render(request, template, context)
 
 
-def place_view(request):
-    context = {}
+def single_tour(request, id):
+    item = Tour.objects.get(id=id)
+    images = TourImage.objects.filter(tour=item)
+    context = {"tour": item, "images": images}
     template = 'place.html'
 
     return render(request, template, context)

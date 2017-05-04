@@ -15,6 +15,12 @@ class VacancyAdmin(admin.ModelAdmin):
     list_display = ['position', 'description']
 
 
+class TourImageAdmin(admin.ModelAdmin):
+    list_display = ['tour']
+
+
+admin.site.register(TourImage, TourImageAdmin)
+
 admin.site.register(Vacancy, VacancyAdmin)
 
 admin.site.register(Tour, TourAdmin)

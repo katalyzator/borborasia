@@ -60,7 +60,7 @@
 
             <div class="tours tours_cart">
                 {% for item in tours %}
-                    <a href="#" class="place">
+                    <a href="{% url 'single_tour' id=item.id %}" class="place">
                         <span class="n_place">{{ item.place }}</span>
 
                         <div class="p_hover">

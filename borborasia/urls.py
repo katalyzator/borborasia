@@ -26,7 +26,7 @@ urlpatterns = [
     url(r'^tours/', 'main.views.tours_view', name='tour'),
     url(r'^todo/', 'main.views.todo_view', name='todo'),
     url(r'^reviews/', 'main.views.review_view', name='review'),
-    url(r'^place/', 'main.views.place_view', name='place'),
+    url(r'^tour/(?P<id>\d+)/$', 'main.views.single_tour', name='single_tour'),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

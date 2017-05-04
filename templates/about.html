@@ -76,53 +76,18 @@
             <h3>Вакансии</h3>
 
             <div class="vacancies">
-                <div class="vacancy">
-                    <div class="v_title">Оператор</div>
+                {% for item in vacancy %}
+                    <div class="vacancy">
+                        <div class="v_title">{{ item.position }}</div>
 
-                    <span class="s_line"></span>
+                        <span class="s_line"></span>
 
-                    <p>Оператор для приема звонков и
-                        информирования клиентов
-                        о направлениях и турах</p>
+                        <p>{{ item.description }}</p>
 
-                    <p>з/п 15 000 сом</p>
-                </div>
+                        <p>з/п {{ item.calary }} сом</p>
+                    </div>
+                {% endfor %}
 
-                <div class="vacancy">
-                    <div class="v_title">Оператор</div>
-
-                    <span class="s_line"></span>
-
-                    <p>Оператор для приема звонков и
-                        информирования клиентов
-                        о направлениях и турах</p>
-
-                    <p>з/п 15 000 сом</p>
-                </div>
-
-                <div class="vacancy">
-                    <div class="v_title">Оператор</div>
-
-                    <span class="s_line"></span>
-
-                    <p>Оператор для приема звонков и
-                        информирования клиентов
-                        о направлениях и турах</p>
-
-                    <p>з/п 15 000 сом</p>
-                </div>
-
-                <div class="vacancy">
-                    <div class="v_title">Оператор</div>
-
-                    <span class="s_line"></span>
-
-                    <p>Оператор для приема звонков и
-                        информирования клиентов
-                        о направлениях и турах</p>
-
-                    <p>з/п 15 000 сом</p>
-                </div>
             </div>
         </div>
     </div>

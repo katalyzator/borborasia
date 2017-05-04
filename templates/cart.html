@@ -1,6 +1,8 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
 
-<header>
+{% block content %}
+  <header>
     <div class="header grid group">
         <a href="{% url 'index' %}" class="logo"><img src="{% static 'images/logo.png' %}" alt="logotype"></a>
 
@@ -34,3 +36,14 @@
 
     </div>
 </header>
+    <table>
+        <tr>
+            <th>Tours</th>
+        </tr>
+        {% for item in cart %}
+        <tr>
+            <td>{{ item }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

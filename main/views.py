@@ -50,3 +50,10 @@ def single_tour(request, id):
     template = 'place.html'
 
     return render(request, template, context)
+
+
+def region_view(request):
+    context = {}
+    template = 'region.html'
+
+    return render(request, template, context)

@@ -1,0 +1,2 @@
+Pillow==4.0.0
+django-jet==1.0.6

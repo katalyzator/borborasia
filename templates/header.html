@@ -1,36 +1,36 @@
 {% load staticfiles %}
 
 <header>
-        <div class="header grid group">
-            <a href="{% url 'index' %}" class="logo"><img src="{% static 'images/logo.png' %}" alt="logotype"></a>
+    <div class="header grid group">
+        <a href="{% url 'index' %}" class="logo"><img src="{% static 'images/logo.png' %}" alt="logotype"></a>
 
 
-            <div class="m_group">
-                <nav>
-                    <ul class="menu">
-                        <li><a href="{% url 'about' %}">О нас</a></li>
-                        <li><a href="#">КУДА ОТПРАВИТЬСЯ</a></li>
-                        <li><a href="{% url 'todo' %}">чем заняться</a></li>
-                        <li><a href="{% url 'tour' %}">планировщик туров</a></li>
-                    </ul>
-                </nav>
-
-                <ul class="language">
-                    <li><a href="#">ru</a><span>/</span></li>
-                    <li><a href="#">eng</a></li>
+        <div class="m_group">
+            <nav>
+                <ul class="menu">
+                    <li><a href="{% url 'about' %}">О нас</a></li>
+                    <li><a href="{% url 'region' %}">КУДА ОТПРАВИТЬСЯ</a></li>
+                    <li><a href="{% url 'todo' %}">чем заняться</a></li>
+                    <li><a href="{% url 'tour' %}">планировщик туров</a></li>
                 </ul>
+            </nav>
 
-                <ul class="extra_menu">
-                    <li><a href="#"><img src="{% static 'images/search_icon.png' %}" alt="search-icon"></a></li>
-                    <li><a href="#"><img src="{% static 'images/menu_map.png' %}" alt="map"></a></li>
-                    <li>
-                        <a href="#">
-                            <img src="{% static 'images/favourite.png' %}" alt="favourite">
-                            <span>12</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            <ul class="language">
+                <li><a href="#">ru</a><span>/</span></li>
+                <li><a href="#">eng</a></li>
+            </ul>
 
+            <ul class="extra_menu">
+                <li><a href="#"><img src="{% static 'images/search_icon.png' %}" alt="search-icon"></a></li>
+                <li><a href="#"><img src="{% static 'images/menu_map.png' %}" alt="map"></a></li>
+                <li>
+                    <a href="#">
+                        <img src="{% static 'images/favourite.png' %}" alt="favourite">
+                        <span>12</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </header>
+
+    </div>
+</header>

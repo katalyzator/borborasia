@@ -73,8 +73,8 @@
                             <div class="tour_title">{{ item.name }}</div>
                             <p>{{ item.description }} </p>
                             <ul class="season">
-                                <li>лето</li>
-                                <li class="hidden">Зима</li>
+                                <li {% if item.summer == False %} class="hidden" {% endif %}>лето</li>
+                                <li {% if item.winter == False %} class="hidden" {% endif %}>Зима</li>
                             </ul>
                         </div>
                         <img src="{{ item.main_image.url }}" alt="image">

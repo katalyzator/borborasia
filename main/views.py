@@ -44,6 +44,8 @@ def review_view(request):
 def single_tour(request, id):
     item = Tour.objects.get(id=id)
     images = TourImage.objects.filter(tour=item)
+    print item.winter
+    print item.summer
     context = {"tour": item, "images": images}
     template = 'place.html'
 

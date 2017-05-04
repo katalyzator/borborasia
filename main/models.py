@@ -26,6 +26,10 @@ class Tour(models.Model):
     text = models.TextField(verbose_name='Текст')
     main_image = models.ImageField(upload_to='tours/images', verbose_name='Главная картинка')
     youtube_video = models.CharField(max_length=255, verbose_name='Вставьте ссылку видео')
+    winter = models.BooleanField(default=False,
+                                 verbose_name='(ЗИМА) Отметьте если этот тур подходит для зимнего периода')
+    summer = models.BooleanField(default=False,
+                                 verbose_name='(ЛЕТО) Отметьте если этот тур подходит для летнего периода')
 
     def __unicode__(self):
         return smart_unicode(self.name)

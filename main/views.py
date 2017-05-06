@@ -48,7 +48,8 @@ def todo_view(request):
 
 
 def review_view(request):
-    context = {}
+    feedback = Feedback.objects.all()
+    context = {"feedback": feedback}
     template = 'review.html'
 
     return render(request, template, context)

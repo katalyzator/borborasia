@@ -1,19 +1,19 @@
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render, render_to_response
-from cart.cart import Cart
+# from cart.cart import Cart
 from main.models import *
 
 
-def add_to_cart(request, id):
-    tour = Tour.objects.get(id=id)
-    cart = Cart(request)
-    cart.add(tour, 10, 1)
-
-    return HttpResponseRedirect('/tours')
-
-
-def get_cart(request):
-    return render_to_response('cart.html', dict(cart=Cart(request)))
+# def add_to_cart(request, id):
+#     tour = Tour.objects.get(id=id)
+#     cart = Cart(request)
+#     cart.add(tour, 10, 1)
+#
+#     return HttpResponseRedirect('/tours')
+#
+#
+# def get_cart(request):
+#     return render_to_response('cart.html', dict(cart=Cart(request)))
 
 
 def index_view(request):

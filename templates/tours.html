@@ -10,39 +10,31 @@
             <div class="tours_blocks">
                 <div class="tours_block">
                     <h4>О Кыргызстане</h4>
-
                     <div class="img_block">
                         <img src="{% static 'images/ala_archa.jpg' %}" alt="image">
                     </div>
-
                     <ul class="todo_list">
                         <li><a href="#">Любимые места туристов</a></li>
                         <li><a href="#">Интересные факты</a></li>
                         <li><a href="#">Столица</a></li>
                     </ul>
                 </div>
-
                 <div class="tours_block">
                     <h4>Перед поездкой</h4>
-
                     <div class="img_block">
                         <img src="{% static 'images/trip_img.jpg' %}" alt="image">
                     </div>
-
                     <ul class="todo_list">
                         <li><a href="#">Подготовка документов</a></li>
                         <li><a href="#">Виды транспорта</a></li>
                         <li><a href="#">Таможня</a></li>
                     </ul>
                 </div>
-
                 <div class="tours_block">
                     <h4>Запланируйте путешествие</h4>
-
                     <div class="img_block">
                         <img src="{% static 'images/adventure_img.jpg' %}" alt="image">
                     </div>
-
                     <ul class="todo_list">
                         <li><a href="#">Найти жилье</a></li>
                         <li><a href="#">Найти туры</a></li>
@@ -51,7 +43,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="t_bg2">
@@ -86,13 +77,20 @@
             </div>
 
             <div class="pagination">
-                <a href="#"></a>
-                <a href="#" class="active">1</a>
-                <a href="#">2</a>
-                <a href="#">3</a>
-                <a href="#">...</a>
-                <a href="#">12</a>
-                <a href="#"></a>
+                {% if tours.has_previous %}
+                    <a href="?page={{ tours.previous_page_number }}"></a>
+                {% endif %}
+
+                {% for page_number in tours.paginator.page_range %}
+                    {% if page_number == tours.number %}
+                        <a href="?page={{ page_number.number }}" class="active">{{ page_number }}</a>
+                    {% else %}
+                        <a href="?page={{ page_number.number }}">{{ page_number }}</a>
+                    {% endif %}
+                {% endfor %}
+                {% if tours.has_next %}
+                    <a href="?page={{ tours.next_page_number }}"></a>
+                {% endif %}
             </div>
         </div>
     </div>

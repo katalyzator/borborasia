@@ -31,6 +31,9 @@ class Tour(models.Model):
     summer = models.BooleanField(default=False,
                                  verbose_name='(ЛЕТО) Отметьте если этот тур подходит для летнего периода')
 
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
     def __unicode__(self):
         return smart_unicode(self.name)
 
@@ -42,6 +45,9 @@ class TourImage(models.Model):
 
     tour = models.ForeignKey(Tour, verbose_name='Выберите тур')
     image = models.ImageField(upload_to='tours/images')
+
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
     def __unicode__(self):
         return smart_unicode(self.tour.name)
@@ -56,6 +62,9 @@ class Personal(models.Model):
     position = models.CharField(max_length=100, verbose_name='Позиция')
     image = models.ImageField(upload_to='personals/images', verbose_name='Фотография')
 
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
     def __unicode__(self):
         return smart_unicode(self.name)
 
@@ -69,5 +78,25 @@ class Vacancy(models.Model):
     description = models.CharField(max_length=600, verbose_name='Описание')
     calary = models.IntegerField(default=10000, verbose_name='Зарплата')
 
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
     def __unicode__(self):
         return smart_unicode(self.description)
+
+
+class Feedback(models.Model):
+    class Meta:
+        verbose_name_plural = 'Отзывы'
+        verbose_name = 'Отзыв'
+
+    title = models.CharField(max_length=255, verbose_name='Название места')
+    person = models.CharField(max_length=255, verbose_name='ФИО')
+    text = models.TextField(verbose_name='Текст')
+    image = models.ImageField(upload_to='feedback/images', verbose_name='Фотография', blank=True)
+
+    timestamp = models.DateTimeField(auto_now_add=True, auto_now=False)
+    updated = models.DateTimeField(auto_now_add=False, auto_now=True)
+
+    def __unicode__(self):
+        return smart_unicode(self.title)

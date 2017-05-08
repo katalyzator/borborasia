@@ -96,7 +96,7 @@ header {
     width: 100%;
     height: 75px;
     padding-top: 10px;
-    z-index: 1100;
+    z-index: 200;
 }
 
 .logo {
@@ -574,17 +574,21 @@ p {
     overflow: hidden;
 }
 
-.images > div:first-child > div:nth-child(2n) {
+.images > div:first-child > a:nth-child(2n) {
     margin-right: 0;
 }
 
-.images > div:first-child > div:first-child,
-.images > div:first-child > div:nth-child(2) {
+.images > div:first-child > a:first-child,
+.images > div:first-child > a:nth-child(2) {
     margin-bottom: 15px;
 }
 
 .b_img {
     position: relative;
+}
+
+.b_img a {
+    display: inline-block;
 }
 
 .b_img > img {
@@ -1037,9 +1041,9 @@ footer {
     margin-right: 1.25%;
     padding: 20px;
     border-radius: 25px;
-    -webkit-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.1);
-    -moz-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.1);
-    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 8px 1px rgba(0,0,0,0.3);
 }
 
 .vacancies > div:last-child {
@@ -1131,6 +1135,7 @@ footer {
 
 .t_bg1 {
     background-color: #f6f6f6;
+    padding-top: 75px;
 }
 
 .t_content1 {
@@ -1180,8 +1185,10 @@ h4 {
 }
 
 .todo_list a {
+    background: url("../images/arrow_icon.png") 0 center no-repeat;
     color: #282828;
     text-decoration: none;
+    padding-left: 25px;
 }
 
 
@@ -1455,11 +1462,16 @@ h4 {
     background: url("../images/like.png") center no-repeat;
     margin-bottom: 15px;
     border: 3px solid #c40f0f;
+    cursor: pointer;
 }
 
 .r_share {
     background: url("../images/share.png") center no-repeat;
     border: 3px solid #139795;
+}
+
+.r_block1 .favourite {
+    background: #c40f0f url("../images/like_hover.png") center no-repeat;
 }
 
 .r_places > p {
@@ -1530,6 +1542,9 @@ h4 {
 
 /*------------------P-BG1------------------*/
 
+.p_content1 {
+    position: relative;
+}
 
 /*------------------R-BG2------------------*/
 
@@ -1570,6 +1585,7 @@ h4 {
 
 .todo_bg {
     background-color: #f6f6f6;
+    padding-top: 75px;
 }
 
 .todo_content {
@@ -1587,7 +1603,7 @@ h4 {
 
 .review_container {
     background-color: #f6f6f6;
-    /*border: 1px solid green;*/
+    padding-top: 75px;
 }
 
 .reviews {
@@ -1747,6 +1763,7 @@ h4 {
     color: #fff;
     text-transform: uppercase;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .r_form label input:hover,
@@ -1756,10 +1773,16 @@ h4 {
     border: 1px solid #139795;
 }
 
+.r_form > label:last-child input:hover {
+    background-color: transparent;
+    border: 3px solid #139795;
+    color: #139795;
+}
 
-/*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
---------------------------------------------------------LIKES----------------------------------------------------------
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+    /*/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    --------------------------------------------------------LIKES----------------------------------------------------------
+    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*------------------L-BG1------------------*/
 
@@ -1808,8 +1831,10 @@ h4 {
 }
 
 .like_share .like {
+    background: #c40f0f url("../images/like_hover.png") center no-repeat;
     position: relative;
     margin: 0 15px 0 0;
+    cursor: pointer;
 }
 
 .like_share .like,
@@ -1930,6 +1955,13 @@ select{
     letter-spacing: 2px;
     padding: 0;
     border-radius: 25px;
+    cursor: pointer;
+}
+
+.application_form > label:last-child input:hover {
+    background-color: transparent;
+    border: 3px solid #fff;
+    /*color: #139795;*/
 }
 
 
@@ -1939,6 +1971,15 @@ select{
 
 .map_bg {
     background-color: #f6f6f6;
+    padding-top: 75px;
+}
+
+.map_content {
+    padding: 50px 0 70px 0;
+}
+
+.m_title {
+    padding-bottom: 40px;
 }
 
 .m_title > h4 {
@@ -2036,7 +2077,7 @@ select{
 .map {
     width: 66.25%;
     height: auto;
-    padding-left: 25px;
+    padding: 30px 0 0 25px;
 }
 
 

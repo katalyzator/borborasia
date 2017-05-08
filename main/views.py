@@ -86,3 +86,10 @@ def region_view(request):
     template = 'region.html'
 
     return render(request, template, context)
+
+
+def map_view(request):
+    context = {}
+    template = 'map.html'
+
+    return render(request, template, context)

@@ -9,7 +9,7 @@
             <nav>
                 <ul class="menu">
                     <li><a href="{% url 'about' %}">О нас</a></li>
-                    <li><a href="{% url 'region' %}">КУДА ОТПРАВИТЬСЯ</a></li>
+                    <li><a href="{% url 'map' %}">КУДА ОТПРАВИТЬСЯ</a></li>
                     <li><a href="{% url 'todo' %}">чем заняться</a></li>
                     <li><a href="{% url 'tour' %}">планировщик туров</a></li>
                 </ul>
@@ -32,5 +32,20 @@
             </ul>
         </div>
 
+    </div>
+
+    <div class="search_drop">
+        <div class="search_content grid">
+            <form method="post" action="#" class="s_form">
+                <label>
+                    <input type="search" placeholder="Поиск...">
+                </label>
+
+                <label>
+                    <input type="submit" value="найти">
+                </label>
+
+            </form>
+        </div>
     </div>
 </header>

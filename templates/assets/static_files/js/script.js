@@ -13,3 +13,7 @@
         $('.js-value').text(value);
     });
 })();
+
+$(".menu-collapsed").click(function () {
+    $(this).toggleClass("menu-expanded");
+});

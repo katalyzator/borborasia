@@ -1,4 +1,4 @@
-function OpenPopup() {
+function OpenPopup(){
     var sblock = $('.search_drop');
     sblock.toggle(300);
 }
@@ -16,7 +16,7 @@ $(document).ready(function () {
     $('.like_share > .like').click(FavLike);
     $('.r_block1 > .like').click(Like);
 
-    $('#custom-file-upload').change(function (e) {
+    $('#custom-file-upload').change(function(e) {
         var filename = e.target.files[0].name;
         console.log(filename);
         $('.filupp-file-name').html(filename);
@@ -35,47 +35,33 @@ $(document).ready(function () {
         $(this).addClass('l_active');
     });
 
-    $('#myimage').mapster({
-        fillOpacity: 0.6,
-        fillColor: '1be7e3',
-        stroke: true,
-        strokeWidth: 3,
-        strokeColor: '1be7e3',
-        strokeOpacity: 1,
-        mapKey: 'data-key',
-        onMouseover: function (e) {
-            $('#myimage').mapster('set', false, e.key);
+    var txt = $('.comment > p');
+    $(txt).each(function (i, obj) {
+        if($(obj).text().length > 280) {
+            $(obj).text($(obj).text().substring(0,277)+'...')
         }
     });
 
-    var temp = null;
-    $('.sphere').each(function (i, obj) {
-        $(obj).hover(function (event) {
-            temp = $(this).attr('data-target');
-            $('#myimage').mapster('set', true, temp);
-        }, function (event) {
-            $('#myimage').mapster('set', false, temp);
-            temp = null;
-        });
+    $(".menu-collapsed").click(function() {
+        $(this).toggleClass("menu-expanded");
     });
 
-    $('.slider').slick({
-        cssEase: 'ease-in',
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: false,
-        dots: true
-    });
+
 });
 
 
-// get the name of uploaded file
-$('input[type="file"]').change(function () {
-    var value = $("input[type='file']").val();
-    $('.js-value').text(value);
-});
 
-$(".menu-collapsed").click(function () {
-    $(this).toggleClass("menu-expanded");
-});
+
+//(function () {
+//
+//    //// get the name of uploaded file
+//    //$('input[type="file"]').change(function(){
+//    //    var value = $("input[type='file']").val();
+//    //    $('.js-value').text(value);
+//    //});
+//
+//
+//
+//})();
+
 

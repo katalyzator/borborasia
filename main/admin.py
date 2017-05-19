@@ -1,13 +1,25 @@
 from django.contrib import admin
+from modeltranslation.admin import TabbedExternalJqueryTranslationAdmin
+from modeltranslation.translator import TranslationOptions, translator
 
 from .models import *
+
+
+class TourTranslationOptions(TranslationOptions):
+    fields = ('name', 'description', 'text')
+
+
+translator.register(Tour, TourTranslationOptions)
 
 
 class PersonalAdmin(admin.ModelAdmin):
     list_display = ['name', 'position']
 
 
-class TourAdmin(admin.ModelAdmin):
+class TourAdmin(TabbedExternalJqueryTranslationAdmin):
+    class Meta:
+        model = Tour
+
     list_display = ['name', 'place']
 
 
